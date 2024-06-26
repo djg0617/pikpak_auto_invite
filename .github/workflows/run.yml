@@ -24,8 +24,5 @@ jobs:
       - name: Run
         env:
           INVITE_CODE: ${{secrets.INVITE_CODE}}
-        run: |
-          for i in {1..3}; do
-          python run.py
-          done
+        run: python run.py
         
