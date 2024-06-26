@@ -25,4 +25,7 @@ jobs:
         env:
           INVITE_CODE: ${{secrets.INVITE_CODE}}
         run: python run.py
+      - name: Run Again
+        env:
+          INVITE_CODE: ${{secrets.INVITE_CODE}}
         run: python run.py
